@@ -37,7 +37,7 @@ const Main = {
                         let findMention = buttons.find(b => b?.props?.message?.toLowerCase() == 'mention');
                         let findCopyMessageId = buttons.find(b => b?.props?.message?.toLowerCase() == 'copy message id');
                         let findMessageButton = buttons.find(b => b?.props?.message?.toLowerCase() == 'message');
-                        // let findJumpToReference = buttons.find(b => b?.props?.message?.toLowerCase() == 'jump to reference');
+                        let findJumpToReference = buttons.find(b => b?.props?.message?.toLowerCase() == 'jump to reference');
                         // let findCreateThread = buttons.find(b => b?.props?.message?.toLowerCase() == 'create thread');
 
                         if (findReport) delete buttons[buttons.indexOf(findReport)]
@@ -45,7 +45,7 @@ const Main = {
                         if (findMention) delete buttons[buttons.indexOf(findMention)]
                         if (findCopyMessageId) delete buttons[buttons.indexOf(findCopyMessageId)]
                         if (findMessageButton) delete buttons[buttons.indexOf(findMessageButton)]
-                        // if (findJumpToReference) delete buttons[buttons.indexOf(findJumpToReference)]
+                        if (findJumpToReference) delete buttons[buttons.indexOf(findJumpToReference)]
                         // if (findCreateThread) delete buttons[buttons.indexOf(findCreateThread)]
                     }
                 )})
