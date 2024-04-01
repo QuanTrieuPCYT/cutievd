@@ -1,18 +1,20 @@
-import { logger } from "@vendetta";
-
 import { before, after } from "@vendetta/patcher"
-import { getAssetIDByName } from "@vendetta/ui/assets"
+// import { getAssetIDByName } from "@vendetta/ui/assets"
 import { findByProps, findByName } from "@vendetta/metro"
 import { React, ReactNative, constants as Constants, clipboard } from "@vendetta/metro/common"
+/*
 import { Forms } from "@vendetta/ui/components"
 import { showToast } from "@vendetta/ui/toasts"
 import { storage } from "@vendetta/plugin";
+*/
 
 const ActionSheet = findByProps("openLazy", "hideActionSheet")
+/*
 const Navigation = findByProps("push", "pushLazy", "pop")
 const DiscordNavigator = findByProps("getRenderCloseButton")
 const { default: Navigator, getRenderCloseButton } = DiscordNavigator
 const { FormRow, FormIcon } = Forms
+*/
 
 let patch = [];
 
