@@ -1,0 +1,14 @@
+{
+    "name": "gtfo",
+    "description": "unneeded buttons get the fuck out!",
+    "authors": [
+        {
+            "name": "QuanTrieuPCYT",
+            "id": "699512154004652093"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "heart"
+    }
+}
