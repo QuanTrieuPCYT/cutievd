@@ -56,7 +56,7 @@ const Main = {
                             const index = buttons.indexOf(findMarkUnread);
                             if (index !== -1) buttons.splice(index, 1);
                         }
-                        /*
+                        */
 
                         if (findCopyMessageId) { // i know this can be toggled by toggling developer mode, but i don't fucking care.
                             const index = buttons.indexOf(findCopyMessageId);
